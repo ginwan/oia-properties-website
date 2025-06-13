@@ -24,7 +24,7 @@ const Hero = () => {
                         DISCOVER YOUR MOST COMFORT PLACE FOR YOUR FUTURE LIFE
                     </div>
                     <div className='md:hidden flex items-center justify-center mt-10'>
-                        <Button text="All Projects" icon={<ArrowRightIcon aria-hidden="true" className="size-3.5" />} className={"text-white px-8 py-3"} />
+                        <Button text="All Projects" icon={<ArrowRightIcon aria-hidden="true" className="size-3.5" />} className={"text-white px-8 py-3 text-sm"} />
                     </div>
                     <div className='mt-10 md:flex hidden gap-4 items-center justify-between w-full'>
                         <OpacityBg className='flex items-center justify-between md:gap-5 gap-3'>
@@ -50,7 +50,7 @@ const Hero = () => {
                                 <div className='max-w-sm w-full text-sm leading-5'></div>
                             </div>
                         </OpacityBg>
-                        <Button text="All Projects" icon={<ArrowRightIcon aria-hidden="true" className="size-3.5" />} className={"text-white py-1.5 px-4"} />
+                        <Button text="All Projects" icon={<ArrowRightIcon aria-hidden="true" className="size-3.5" />} className={"text-white py-1.5 px-4 text-sm"} />
                     </div>
                 </div>
                 <div className='absolute bottom-10 z-30 md:right-10 md:left-10 md:w-auto w-full'>

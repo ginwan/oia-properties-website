@@ -116,12 +116,12 @@ const SearchForm = () => {
                 </div>
 
                 <div className="md:block flex-none">
-                    <Button text="Search" className="text-white hidden md:flex py-1.5 px-4" />
+                    <Button text="Search" className="text-white hidden md:flex py-1.5 px-4 text-sm" />
                     <Button icon={<MagnifyingGlassIcon
                         aria-hidden="true"
                         // className="h-10 w-10"
                         size={20}
-                    />} className="text-white md:hidden h-12 w-12 py-1 px-1" />
+                    />} className="text-white md:hidden h-12 w-12 py-1 px-1 text-sm" />
                 </div>
             </div>
         </form>

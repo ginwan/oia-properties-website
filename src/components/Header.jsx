@@ -166,7 +166,7 @@ const Header = () => {
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex  gap-3">
-          <Button text="Free consultation" icon={<ArrowRightIcon aria-hidden="true" className="size-3.5" />} className={"text-black py-1.5 px-4"} />
+          <Button text="Free consultation" icon={<ArrowRightIcon aria-hidden="true" className="size-3.5" />} className={"text-black py-1.5 px-4 text-sm"} />
           <div className="flex items-center justify-center border-b border-gray-900/5 bg-gray-100 p-1.5 rounded-md">
             <HeartIcon aria-hidden="true" className="size-6 text-yellow-500" />
           </div>

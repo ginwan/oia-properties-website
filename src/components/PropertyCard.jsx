@@ -69,7 +69,7 @@ const PropertyCard = () => {
             {/* Button section */}
             <div className="mt-6 md:mt-8">
                 <div
-                    className="group relative flex md:w-[450px] items-center justify-start bg-white ease-in-out focus:not-data-focus:outline-none data-checked:bg-white/10 data-focus:outline data-focus:outline-white"
+                    className="group relative flex md:w-[450px] w-[300px] items-center justify-start bg-white ease-in-out focus:not-data-focus:outline-none data-checked:bg-white/10 data-focus:outline data-focus:outline-white"
                 >
                     <button
                         aria-hidden="true"
