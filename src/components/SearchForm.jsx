@@ -116,7 +116,7 @@ const SearchForm = () => {
                 </div>
 
                 <div className="md:block flex-none">
-                    <Button text="Search" className="text-white hidden md:flex py-1.5 px-4 text-sm" />
+                    <Button text="Search" className="text-white hidden md:flex py-2 px-4 text-sm" />
                     <Button icon={<MagnifyingGlassIcon
                         aria-hidden="true"
                         // className="h-10 w-10"
