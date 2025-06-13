@@ -132,7 +132,7 @@ const PropertyCard = () => {
             </div>
             <button
                 type="button"
-                className="flex mx-auto items-center justify-center gap-2 font-semibold text-md py-2 px-6 bg-white border border-gray-800 hover:bg-gray-800 hover:text-white rounded-full cursor-pointer">
+                className="flex md:hidden mx-auto items-center justify-center gap-2 font-semibold text-md py-2 px-6 bg-white border border-gray-800 hover:bg-gray-800 hover:text-white rounded-full cursor-pointer">
                 All Properties
             </button>
         </div>
