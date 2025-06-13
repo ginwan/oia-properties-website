@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
 
 // import required modules
 import { Navigation } from 'swiper/modules'
@@ -17,7 +16,13 @@ const SwiperComponent = ({ images, className, children, childrenClassName, imgCl
     const swiperRef = useRef(null);
 
     useEffect(() => {
-        if (swiperRef.current) {
+        if (
+            swiperRef.current &&
+            prevRef.current &&
+            nextRef.current
+        ) {
+            swiperRef.current.params.navigation.prevEl = prevRef.current;
+            swiperRef.current.params.navigation.nextEl = nextRef.current;
             swiperRef.current.navigation.init();
             swiperRef.current.navigation.update();
         }
@@ -38,12 +43,13 @@ const SwiperComponent = ({ images, className, children, childrenClassName, imgCl
                 {children}
             </div>
             <Swiper
-                navigation={{
-                    prevEl: prevRef.current,
-                    nextEl: nextRef.current,
-                }}
+                // navigation={{
+                //     prevEl: prevRef.current,
+                //     nextEl: nextRef.current,
+                // }}
                 loop={true}
                 onInit={(swiper) => {
+                    swiperRef.current = swiper;
                     swiper.params.navigation.prevEl = prevRef.current;
                     swiper.params.navigation.nextEl = nextRef.current;
                     swiper.navigation.init();

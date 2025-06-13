@@ -15,7 +15,13 @@ const OffPlanSlider = () => {
     const swiperRef = useRef(null);
 
     useEffect(() => {
-        if (swiperRef.current) {
+        if (
+            swiperRef.current &&
+            prevRef.current &&
+            nextRef.current
+        ) {
+            swiperRef.current.params.navigation.prevEl = prevRef.current;
+            swiperRef.current.params.navigation.nextEl = nextRef.current;
             swiperRef.current.navigation.init();
             swiperRef.current.navigation.update();
         }
@@ -57,11 +63,8 @@ const OffPlanSlider = () => {
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={13}
-                    navigation={{
-                        prevEl: prevRef.current,
-                        nextEl: nextRef.current,
-                    }}
                     onInit={(swiper) => {
+                        swiperRef.current = swiper;
                         swiper.params.navigation.prevEl = prevRef.current;
                         swiper.params.navigation.nextEl = nextRef.current;
                         swiper.navigation.init();

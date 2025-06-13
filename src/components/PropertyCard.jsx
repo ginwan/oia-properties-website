@@ -20,7 +20,13 @@ const PropertyCard = () => {
     const swiperRef = useRef(null);
 
     useEffect(() => {
-        if (swiperRef.current) {
+        if (
+            swiperRef.current &&
+            prevRef.current &&
+            nextRef.current
+        ) {
+            swiperRef.current.params.navigation.prevEl = prevRef.current;
+            swiperRef.current.params.navigation.nextEl = nextRef.current;
             swiperRef.current.navigation.init();
             swiperRef.current.navigation.update();
         }
@@ -92,11 +98,9 @@ const PropertyCard = () => {
                     slidesPerView={isMobile ? 1.1 : isTablet ? 2.1 : 3.2}
                     spaceBetween={11}
                     grabCursor={true}
-                    navigation={{
-                        prevEl: prevRef.current,
-                        nextEl: nextRef.current,
-                    }}
+                    loop={true}
                     onInit={(swiper) => {
+                        swiperRef.current = swiper;
                         swiper.params.navigation.prevEl = prevRef.current;
                         swiper.params.navigation.nextEl = nextRef.current;
                         swiper.navigation.init();
