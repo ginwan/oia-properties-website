@@ -11,7 +11,7 @@ import { Navigation } from 'swiper/modules'
 import { useEffect, useRef } from 'react';
 import { CaretLeftIcon, CaretRightIcon } from '@phosphor-icons/react';
 
-const SwiperComponent = ({ images, className, children, childrenClassName }) => {
+const SwiperComponent = ({ images, className, children, childrenClassName, imgClassName }) => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiperRef = useRef(null);
@@ -56,7 +56,7 @@ const SwiperComponent = ({ images, className, children, childrenClassName }) => 
                     <SwiperSlide key={i}>
                         <div className="relative w-full sm:h-full h-[600px]">
                             {/* Image */}
-                            <img src={img} alt={`property ${i + 1}`} className="w-full sm:h-full h-[600px] object-cover" />
+                            <img src={img} alt={`property ${i + 1}`} className={`w-full sm:h-full object-cover ${imgClassName}`} />
 
                             {/* Overlay */}
                             <div className="absolute inset-0 bg-black opacity-40  z-10" />
@@ -69,14 +69,14 @@ const SwiperComponent = ({ images, className, children, childrenClassName }) => 
             <button
                 ref={prevRef}
                 onClick={handlePrevClick}
-                className="absolute top-1/2 left-4 z-20 transform -translate-y-1/2 bg-black opacity-35 text-white p-2 rounded-full shadow cursor-pointer"
+                className="absolute top-1/2 left-4 z-20 transform -translate-y-1/2 bg-black/35 text-gray-300/70 p-2 rounded-full shadow cursor-pointer"
             >
                 <CaretLeftIcon size={32} />
             </button>
             <button
                 ref={nextRef}
                 onClick={handleNextClick}
-                className="absolute top-1/2 right-4 z-20 transform -translate-y-1/2 bg-black opacity-35 text-white p-2 rounded-full shadow cursor-pointer"
+                className="absolute top-1/2 right-4 z-20 transform -translate-y-1/2 bg-black/35 text-gray-300/70 p-2 rounded-full shadow cursor-pointer"
             >
                 <CaretRightIcon size={32} />
             </button>
