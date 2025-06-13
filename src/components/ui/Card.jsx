@@ -10,10 +10,10 @@ const Card = () => {
     return (
         <div className="overflow-hidden border border-gray-400 rounded-lg bg-white shadow-sm mb-6">
             <SwiperComponent images={images} className='h-[240px]'>
-                <div className="absolute top-4 z-30 left-6 right-6 flex items-center justify-between">
+                <div className="absolute top-3.5 z-30 left-6 right-6 flex items-center justify-between">
                     <div className="flex flex-col items-start gap-2">
-                        <div className="rounded-lg bg-yellow-500 px-2 py-1 text-md text-white">For Sale</div>
-                        <div className="rounded-lg bg-black/30 px-2 py-1 text-md text-white">Under Construction</div>
+                        <div className="rounded-lg bg-yellow-500 px-2 py-1 text-sm text-white">For Sale</div>
+                        <div className="rounded-lg bg-black/30 px-2 py-1 text-sm text-white">Under Construction</div>
                     </div>
                     <div className="flex items-center justify-center border-b border-gray-900/5 bg-black/50 p-2 rounded-full">
                         <HeartIcon aria-hidden="true" className="size-6 text-yellow-500" />

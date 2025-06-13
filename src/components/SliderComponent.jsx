@@ -5,7 +5,7 @@ const SliderComponent = () => {
 
     return (
         <div className=''>
-            <div className='text-3xl font-bold flex justify-center pt-7'>SAADIYAT LAGOONS</div>
+            <div className='md:text-3xl text-[1.7rem] font-bold flex justify-center md:pt-7 pt-4'>SAADIYAT LAGOONS</div>
             <div className="overflow-hidden whitespace-nowrap pl-8 pt-4 sm:pt-10 sm:flex justify-center">
                 <div className="flex gap-4 md:gap-12 text-md md:text-lg ">
                     <div className="inline-block">4 BHK VILLA + MADI'S</div>
@@ -16,7 +16,7 @@ const SliderComponent = () => {
 
 
             <div className='bg-white border-t-2 md:border-2 border-gray-300 rounded-t-lg md:rounded-lg mt-5 md:mt-8 md:flex gap-15 overflow-hidden'>
-                <div className='p-8'>
+                <div className='p-6'>
                     <div className='capitalize text-gray-600 md:text-lg text-md max-w-[850px] md:pt-4 pt-0'>
                         Explore the adventure park, stroll access the stunning eco-corniche
                         ,soak in unparalleled culture experiences-in A choice of 4 to 6-bed

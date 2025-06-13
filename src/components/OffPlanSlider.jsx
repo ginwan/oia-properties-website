@@ -53,7 +53,7 @@ const OffPlanSlider = () => {
         <div className='mt-12'>
             {/* Section title */}
             <div className='px-4 lg:px-16'>
-                <div className='text-2xl md:text-6xl font-semibold border-l-8 border-yellow-500 px-4 inline-block'>
+                <div className='text-2xl md:text-5xl font-semibold border-l-8 border-yellow-500 px-4 inline-block'>
                     OFF-PLAN PROJECT
                 </div>
             </div>
@@ -63,6 +63,7 @@ const OffPlanSlider = () => {
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={13}
+                    loop={true}
                     onInit={(swiper) => {
                         swiperRef.current = swiper;
                         swiper.params.navigation.prevEl = prevRef.current;
@@ -81,14 +82,14 @@ const OffPlanSlider = () => {
                 <button
                     ref={prevRef}
                     onClick={handlePrevClick}
-                    className="absolute top-12 md:left-16 left-6 z-50 bg-black/10 backdrop-blur-sm text-black p-2 md:p-4 rounded-full md:rounded-2xl cursor-pointer"
+                    className="absolute top-8.5 md:top-12 md:left-16 left-6 z-50 bg-black/10 backdrop-blur-sm text-black p-2 md:p-4 rounded-full md:rounded-2xl cursor-pointer"
                 >
                     <CaretLeftIcon size={isMobile || isTablet ? 18 : 32} />
                 </button>
                 <button
                     ref={nextRef}
                     onClick={handleNextClick}
-                    className="absolute  top-12 md:right-16 right-6 z-50 bg-black/10 backdrop-blur-sm text-black p-2 md:p-4 rounded-full md:rounded-2xl cursor-pointer"
+                    className="absolute top-8.5 md:top-12 md:right-16 right-6 z-50 bg-black/10 backdrop-blur-sm text-black p-2 md:p-4 rounded-full md:rounded-2xl cursor-pointer"
                 >
                     <CaretRightIcon size={isMobile || isTablet ? 18 : 32} />
                 </button>

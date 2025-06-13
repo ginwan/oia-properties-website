@@ -69,25 +69,25 @@ const PropertyCard = () => {
                 />
             </div>
             {/* Section title */}
-            <div className='text-2xl md:text-6xl font-semibold border-l-8 border-yellow-500 px-4 inline-block'>
+            <div className='text-2xl md:text-5xl font-semibold border-l-8 border-yellow-500 px-4 inline-block'>
                 LATEST PROPERTIES
             </div>
             {/* Button section */}
             <div className="mt-6 md:mt-8">
                 <div
-                    className="group relative flex md:w-[450px] w-[300px] items-center justify-start bg-white ease-in-out focus:not-data-focus:outline-none data-checked:bg-white/10 data-focus:outline data-focus:outline-white"
+                    className="group relative flex md:w-[450px] w-[340px] items-center justify-start bg-white ease-in-out focus:not-data-focus:outline-none data-checked:bg-white/10 data-focus:outline data-focus:outline-white"
                 >
                     <button
                         aria-hidden="true"
                         onClick={() => setValue("for_sale")}
-                        className={`${value === "for_sale" ? " text-black bg-yellow-500 rounded-l-lg border-2 border-transparent" : "bg-white text-blue-800 border-r-transparent border-2 border-gray-200 rounded-l-lg"} w-full cursor-pointer px-8 md:px-16 md:py-2 py-2.5 inline-block  translate-x-0 ring-0 transition duration-200 ease-in-out group-data-checked:translate-x-7`}
+                        className={`${value === "for_sale" ? " text-black bg-yellow-500 rounded-l-lg border-2 border-transparent" : "bg-white text-blue-800 border-r-transparent border-2 border-gray-200 rounded-l-lg"} w-full font-semibold cursor-pointer px-8 md:px-16 md:py-2 py-2.5 inline-block  translate-x-0 ring-0 transition duration-200 ease-in-out group-data-checked:translate-x-7`}
                     >
                         FOR SALE
                     </button>
                     <button
                         aria-hidden="true"
                         onClick={() => setValue("for_rent")}
-                        className={`${value === "for_rent" ? " text-black bg-yellow-500 rounded-r-lg border-2 border-transparent" : "bg-white text-blue-800 border-l-transparent border-2 border-gray-200 rounded-r-lg"} w-full cursor-pointer px-8 md:px-16 md:py-2 py-2.5 inline-block  translate-x-0 ring-0 transition duration-200 ease-in-out group-data-checked:translate-x-7`}
+                        className={`${value === "for_rent" ? " text-black bg-yellow-500 rounded-r-lg border-2 border-transparent" : "bg-white text-blue-800 border-l-transparent border-2 border-gray-200 rounded-r-lg"} w-full font-semibold cursor-pointer px-8 md:px-16 md:py-2 py-2.5 inline-block  translate-x-0 ring-0 transition duration-200 ease-in-out group-data-checked:translate-x-7`}
                     >
                         FOR RENT
                     </button>
@@ -95,7 +95,7 @@ const PropertyCard = () => {
             </div>
             <div className="mt-6 md:mt-8">
                 <Swiper
-                    slidesPerView={isMobile ? 1.1 : isTablet ? 2.1 : 3.2}
+                    slidesPerView={isMobile ? 1.1 : isTablet ? 1.8 : 3.2}
                     spaceBetween={11}
                     grabCursor={true}
                     loop={true}

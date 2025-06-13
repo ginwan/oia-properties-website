@@ -75,14 +75,14 @@ const SwiperComponent = ({ images, className, children, childrenClassName, imgCl
             <button
                 ref={prevRef}
                 onClick={handlePrevClick}
-                className="absolute top-1/2 left-4 z-20 transform -translate-y-1/2 bg-black/35 text-gray-300/70 p-2 rounded-full shadow cursor-pointer"
+                className="absolute top-1/2 left-4 z-20 transform -translate-y-1/2 bg-black/35 text-gray-300/70 md:p-2 p-1.5 rounded-full shadow cursor-pointer"
             >
                 <CaretLeftIcon size={32} />
             </button>
             <button
                 ref={nextRef}
                 onClick={handleNextClick}
-                className="absolute top-1/2 right-4 z-20 transform -translate-y-1/2 bg-black/35 text-gray-300/70 p-2 rounded-full shadow cursor-pointer"
+                className="absolute top-1/2 right-4 z-20 transform -translate-y-1/2 bg-black/35 text-gray-300/70 md:p-2 p-1.5 rounded-full shadow cursor-pointer"
             >
                 <CaretRightIcon size={32} />
             </button>
