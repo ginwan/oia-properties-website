@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
+      <nav aria-label="Global" className="mx-auto flex max-w-[1450px] items-center justify-between p-4 lg:px-8">
         <div className="flex">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
@@ -166,7 +166,7 @@ const Header = () => {
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex  gap-3">
-          <Button text="Free consultation" icon={<ArrowRightIcon aria-hidden="true" className="size-3.5" />} className={"text-black"} />
+          <Button text="Free consultation" icon={<ArrowRightIcon aria-hidden="true" className="size-3.5" />} className={"text-black py-1.5 px-4"} />
           <div className="flex items-center justify-center border-b border-gray-900/5 bg-gray-100 p-1.5 rounded-md">
             <HeartIcon aria-hidden="true" className="size-6 text-yellow-500" />
           </div>

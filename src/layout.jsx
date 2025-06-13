@@ -7,7 +7,9 @@ const Layout = ({ children }) => {
         <div>
             <Langheader />
             <Header />
-            {children}
+            <div className=''>
+                {children}
+            </div>
         </div>
     )
 }

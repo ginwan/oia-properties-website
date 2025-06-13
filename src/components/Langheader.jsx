@@ -21,7 +21,7 @@ const Langheader = () => {
     <header className="bg-black shadow lg:flex hidden">
       <nav
         aria-label="Global"
-        className="mx-auto flex w-full max-w-7xl items-center justify-end p-2 lg:px-8"
+        className="mx-auto flex w-full max-w-[1450px] items-center justify-end p-2 lg:px-8"
       >
         <div className="relative inline-block text-left">
           <button
