@@ -82,14 +82,14 @@ const OffPlanSlider = () => {
                 <button
                     ref={prevRef}
                     onClick={handlePrevClick}
-                    className="absolute top-8.5 md:top-12 md:left-16 left-6 z-50 bg-black/10 backdrop-blur-sm text-black p-2 md:p-4 rounded-full md:rounded-2xl cursor-pointer"
+                    className="absolute top-8 md:top-12 md:left-16 left-6 z-50 bg-black/10 backdrop-blur-sm text-black p-2 md:p-4 rounded-full md:rounded-2xl cursor-pointer"
                 >
                     <CaretLeftIcon size={isMobile || isTablet ? 18 : 32} />
                 </button>
                 <button
                     ref={nextRef}
                     onClick={handleNextClick}
-                    className="absolute top-8.5 md:top-12 md:right-16 right-6 z-50 bg-black/10 backdrop-blur-sm text-black p-2 md:p-4 rounded-full md:rounded-2xl cursor-pointer"
+                    className="absolute top-8 md:top-12 md:right-16 right-6 z-50 bg-black/10 backdrop-blur-sm text-black p-2 md:p-4 rounded-full md:rounded-2xl cursor-pointer"
                 >
                     <CaretRightIcon size={isMobile || isTablet ? 18 : 32} />
                 </button>
