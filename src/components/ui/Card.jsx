@@ -1,4 +1,4 @@
-import { BathtubIcon, BedIcon, HeartIcon, MapPinIcon, NotchesIcon } from "@phosphor-icons/react"
+import { BathtubIcon, BedIcon, HeartIcon, MapPinIcon, NotchesIcon, WhatsappLogoIcon } from "@phosphor-icons/react"
 import FVilla from "../../assets/img/first_villa.jpg"
 import SVilla from "../../assets/img/second_villa.jpg"
 import THVilla from "../../assets/img/third_villa.jpg"
@@ -44,7 +44,12 @@ const Card = () => {
                         1.142 FT
                     </div>
                 </div>
-                <div className="flex items-center mt-2.5 gap-4 w-full">
+                <div className="flex items-center mt-2.5 md:gap-2 gap-3 w-full">
+                    <button
+                        type="button"
+                        className="md:flex hidden w-full items-center justify-center gap-2 font-semibold text-md py-2 bg-white border border-gray-300 rounded-md cursor-pointer">
+                        <WhatsappLogoIcon size={24} weight="light" className="text-green-500" />
+                    </button>
                     <button
                         type="button"
                         className="flex w-full items-center justify-center gap-2 font-semibold text-md py-2 bg-white border border-gray-800 hover:bg-gray-800 hover:text-white rounded-md cursor-pointer">
