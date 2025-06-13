@@ -9,7 +9,7 @@ const images = [THVilla, SVilla, FVilla]
 const Card = () => {
     return (
         <div className="overflow-hidden border border-gray-400 rounded-lg bg-white shadow-sm mb-6">
-            <SwiperComponent images={images} className='h-[230px]'>
+            <SwiperComponent images={images} className='h-[228px]'>
                 <div className="absolute top-3.5 z-30 left-6 right-6 flex items-center justify-between">
                     <div className="flex flex-col items-start gap-2">
                         <div className="rounded-lg bg-yellow-500 px-2 py-1 text-sm text-white">For Sale</div>
