@@ -35,7 +35,7 @@ const Card = () => {
                         <BedIcon size={24} weight="fill" className="mr-2 text-yellow-500" />
                         3 Bed
                     </div>
-                    <div className=" text-gray-800 flex items-center border-r border-gray-400 px-3">
+                    <div className=" text-gray-800 flex items-center border-r border-gray-400 sm:px-3 px-1.5">
                         <BathtubIcon size={24} weight="fill" className="mr-2 text-yellow-500" />
                         3 Bath
                     </div>

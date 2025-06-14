@@ -6,8 +6,8 @@ const SliderComponent = () => {
     return (
         <div className=''>
             <div className='md:text-3xl text-[1.4rem] font-bold flex justify-center md:pt-7 pt-4'>SAADIYAT LAGOONS</div>
-            <div className="overflow-hidden whitespace-nowrap pl-8 pt-4 sm:pt-10 sm:flex justify-center">
-                <div className="flex gap-4 md:gap-12 text-md md:text-lg ">
+            <div className="overflow-hidden whitespace-nowrap pl-6 sm:pl-8 pt-4 sm:pt-10 sm:flex justify-center">
+                <div className="flex gap-4 md:gap-12 text-sm sm:text-md md:text-lg ">
                     <div className="inline-block">4 BHK VILLA + MADI'S</div>
                     <div className="inline-block">5 BHK VILLA + MADI'S</div>
                     <div className="inline-block">6 BHK VILLA + MADI'S</div>
