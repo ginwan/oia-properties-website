@@ -16,7 +16,7 @@ const Hero = () => {
     return (
         <div className='mt-1.5 text-white'>
             <SwiperComponent images={images} className='md:h-[100vh] h-[600px]' childrenClassName='md:mx-auto flex max-w-[1450px] items-center lg:px-8' imgClassName='h-[600px]'>
-                <div className='absolute top-17 z-30 md:right-20 md:left-20 left-2 right-2'>
+                <div className='absolute top-17 z-20 md:right-20 md:left-20 left-2 right-2'>
                     <div className='font-semibold hidden text-5xl text-white leading-[1.2] max-w-4xl md:block'>
                         DISCOVER YOUR MOST COMFORT PLACE FOR YOUR FUTURE LIFE
                     </div>
